@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="header"><u>International Space Station Status</u></h1>
+        <div id="subtitlediv"><p id="subtitle">On this webpage you will see the latitude, longitude, velocity and visibility of the International Space Station, updated every five seconds</p></div>
+       <div id="infobox">
+        <div id="imgone"><img src="ISS_pic_one" alt="ISS pic" /></div>
+        <div id="latdiv"><p id="infoone">Latitude: <span id="lat"></span></p></div>
+        <div id="londiv"><p id="infotwo">Longitude: <span id="lon"></span></p></div>
+        <div id="veldiv"><p id="infothree">Velocity: <span id="vel"></span></p></div>
+        <div id="visdiv"><p id="infofour">Visibility: <span id="vis"></span></p></div>
+       </div>
+       
+        
+    <script>
+        
+        const iss_url  = 'https://api.wheretheiss.at/v1/satellites/25544';
+
+        async function getISS() {
+            const response = await fetch(iss_url);
+            const data = await response.json();
+            const { latitude, longitude, velocity, visibility } = data;
+
+                document.getElementById("lat").textContent = latitude;
+                document.getElementById("lon").textContent = longitude;
+                document.getElementById("vel").textContent = velocity;
+                document.getElementById("vis").textContent = visibility;
+        }
+
+        getISS();
+
+        setInterval(getISS, 5000);
+
+    </script>
+</body>
+</html>

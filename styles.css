@@ -1,0 +1,63 @@
+#header {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: "heavy";
+}
+#subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: "heavy";
+}
+#subtitlediv {
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    box-shadow: #000000;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#infobox {
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#imgone {
+    display: inline-block;
+}
+#infoone, #infotwo, #infothree, #infofour {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: "heavy";
+}
+#latdiv {
+    color:#18fff7;
+    background-color: black;
+    padding: 3px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+#londiv {
+    color:#ff4e18;
+    background-color: black;
+    padding: 3px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+#veldiv {
+    color:#ffc118;
+    background-color: black;
+    padding: 3px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+#visdiv {
+    color:#8818ff;
+    background-color: black;
+    padding: 3px;
+    margin-left: 300px;
+    margin-right: 300px;
+}

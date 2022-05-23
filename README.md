@@ -1,3 +1,3 @@
-# ISS-API-Practice
-Practice API using information about the International Space Station
-I got the API information from the webpage https://wheretheiss.at
+# ISS-API
+Fun application used to track the International Space Station
+API information from the webpage https://wheretheiss.at
